@@ -34,6 +34,12 @@ cargo run
 
 可以通过修改`resources/task_manager.rc`文件来自定义程序图标。
 
+## 演示视频
+
+项目演示视频:
+
+![演示动画](resources/video.gif)
+
 ## 使用说明
 
 程序启动后会显示系统进程列表，包含以下信息：
