@@ -1,0 +1,22 @@
+[package]
+name = "win_task_manager"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.windows]
+icon = "resources/icons/task_manager.ico"
+
+[build-dependencies]
+winres = "0.1"
+
+[dependencies]
+windows-sys = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Diagnostics_ToolHelp"
+]}
+chrono = "0.4.40"
+sysinfo = "0.33.1"
+tui = "0.19.0"
+crossterm = "0.27"
